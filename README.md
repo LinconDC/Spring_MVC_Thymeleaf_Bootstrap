@@ -1,1 +1,1 @@
-# Spring_MVC_Thymekeaf_Bootstrap
+# Spring_MVC_Thymeleaf_Bootstrap
