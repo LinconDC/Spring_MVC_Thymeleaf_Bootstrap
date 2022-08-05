@@ -3,7 +3,18 @@ package br.com.alura.mvc.mudi.model;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity //Uma entidade é uma tabela do banco de dados
 public class Pedido {
+	
+	// Cria uma coluna chamada ID na tabela Pedido 'auto incremento'
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY) 
+	private Long id; 
+	
 	private String nomeProduto;
 	private BigDecimal valorNegociado;
 	private LocalDate dataDaEntrega;
